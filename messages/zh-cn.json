@@ -1,4 +1,11 @@
 {
   "$schema": "https://inlang.com/schema/inlang-message-format",
-  "hello_world": "Hello, {name} from zh-cn!"
+  "new_user_desc": "创建账号",
+  "password": "密码",
+  "sign_up": "注册",
+  "login_button": "登录",
+  "register_button": "注册",
+  "welcome_slogan": "欢迎回来",
+  "email_label": "邮箱",
+  "password_label": "密码"
 }
