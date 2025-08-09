@@ -5,6 +5,10 @@
   import AppSidebar from "$lib/components/sidebar/appSidebar.svelte";
   import SiteHeader from "$lib/components/siteHeader/siteHeader.svelte";
   import SectionCards from "$lib/components/sectionCards.svelte";
+  import ChartAreaInteractive from "$lib/components/chart/chartAreaInteractive.svelte";
+  import DataTable from "$components/dataTable/dataTable.svelte";
+
+  import Tdata from "./data";
 
   let { data }: { data: PageServerData } = $props();
 </script>
@@ -25,9 +29,9 @@
         <div class="flex flex-col gap-4 py-4 md:gap-6 md:py-6">
           <SectionCards />
           <div class="px-4 lg:px-6">
-            <!-- <ChartAreaInteractive /> -->
+            <ChartAreaInteractive />
           </div>
-          <!-- <DataTable {data} /> -->
+          <DataTable data={Tdata} />
         </div>
       </div>
     </div>
